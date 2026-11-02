@@ -2,10 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nexuslab — Um novo começo",
-  description: "Uma base simples para transformar ideias em experiências digitais.",
+  title: "nexuslab",
+  description:
+    "Conectando estudantes e desenvolvedores de tecnologia do Cariri. ",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="pt-BR">
+      <body>{children}</body>
+    </html>
+  );
 }
